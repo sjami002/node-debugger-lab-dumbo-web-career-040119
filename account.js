@@ -3,7 +3,7 @@ module.exports = function account() {
   var customerAccount = {
     balance: 0,
     name: 'Azat Mardan',
-    checking: '1'
+    checking: 1
   }
 
   function setAccountType () {
@@ -23,9 +23,9 @@ module.exports = function account() {
     account.balance += deposit
   }
 
-  output['Account before opening'] = 'customerAccount'
+  output['Account before opening'] = customerAccount
 
-  openAccount(customerAccount)
+  openAccount(customerAccount, deposit)
   setAccountType()
   output['Account after opening'] = customerAccount
   return output
