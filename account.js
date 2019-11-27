@@ -1,4 +1,4 @@
-module.exports = function account() {
+module.exports = function() {
   var output = {}
   var customerAccount = {
     balance: 0,
